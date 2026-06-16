@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>witcher3 | Pixel Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .game-detail-container { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .game-info-side h1 { color: #4a148c; font-size: 36px; margin-bottom: 10px; }
+        .genre-tag { background: #e0bfff; color: #4a148c; padding: 5px 15px; border-radius: 20px; font-size: 14px; }
+        .price-big { font-size: 28px; font-weight: bold; color: #4a148c; margin: 20px 0; }
+        .buy-btn { background: #4a148c; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 18px; cursor: pointer; transition: 0.3s; }
+        .buy-btn:hover { background: #6a1b9a; transform: scale(1.05); }
+        .description { line-height: 1.6; color: #333; margin-top: 20px; }
+        .system-req { background: #f9f3ff; padding: 20px; border-radius: 10px; margin-top: 30px; border: 1px solid #e0bfff; }
+        .system-req h3 { margin-top: 0; color: #4a148c; }
+        .req-list { list-style: none; padding: 0; }
+        .req-list li { margin-bottom: 10px; font-size: 14px; }
+        .req-list strong { color: #4a148c; }
+        .game-main-img { width: 100%; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #4a148c; text-decoration: none; }
+        
+        @media (max-width: 768px) { .game-detail-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="assets/logo.png" alt="Pixel Portal Logo" class="logo-img">
+                <span class="logo-text">Pixel Portal</span>
+            </a>
+            <nav class="nav" style="display: flex; gap: 12px; align-items: center;">
+                <a href="index.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">головна</a>
+                <a href="games.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">готові ігри</a>
+                <a href="promotions.html" class="nav-btn active" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">акції</a>
+                <a href="addons.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">доповнення</a>
+                <a href="about.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">про нас</a>
+                <a href="support.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">підтримка</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="games.html" class="back-link">← Повернутися до каталогу</a>
+
+        <div class="game-detail-container">
+            <div class="game-image-side">
+                <img src="assets/witcher3.jpg" alt="" class="game-main-img">
+            </div>
+
+            <div class="game-info-side">
+                <h1>Witcher 3</h1>
+                <span class="genre-tag">RPG</span>
+                
+                <p class="description">
+                    Станьте мисливцем на монстрів Геральтом у захопливому світі.
+                </p>
+
+                <div class="price-big">300 грн.</div>
+                <button class="buy-btn">Придбати зараз</button>
+
+                <div class="system-req">
+                    <h3>Системні вимоги:</h3>
+                    <ul class="req-list">
+                        <li><strong>ОС:</strong> Windows 10/11</li>
+                        <li><strong>Процесор:</strong> Intel Core i3-3210 / AMD A8-7600</li>
+                        <li><strong>Оперативна пам'ять:</strong> 4 GB RAM</li>
+                        <li><strong>Відеокарта:</strong> Intel HD Graphics 4000 / AMD Radeon R5</li>
+                        <li><strong>Місце на диску:</strong> 2 GB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="support.html">Підтримка</a>
+            </div>
+            <p class="copyright">&copy; 2026 Pixel Portal. Всі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

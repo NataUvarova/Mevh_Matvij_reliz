@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід | Pixel ID</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стилі для центрування форми на екрані */
+        .login-page-body {
+            background-color: #f4f0ff; /* Світло-фіолетовий бекграунд */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .login-card {
+            background: #ffffff;
+            border: 2px solid #e0bfff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(74, 20, 140, 0.05);
+            text-align: center;
+        }
+
+        .login-card .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .login-card h2 {
+            color: #2b11bd;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #4a148c;
+            font-size: 13px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0bfff;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #2b11bd;
+        }
+
+        .form-actions {
+            margin-top: 25px;
+        }
+
+        .submit-btn {
+            background-color: #b71c1c; /* Ваш фірмовий колір кнопки входу */
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #981414;
+        }
+
+        .login-footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .login-footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="login-page-body">
+
+    <div class="login-card">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Pixel ID" style="width: 40px; height: 40px; background: #2b11bd; border-radius: 5px; padding: 5px;">
+            <span style="font-size: 24px; font-weight: bold; color: #2b11bd;">PIXEL ID</span>
+        </div>
+
+        <h2>Вхід в обліковий запис</h2>
+
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">Електронна пошта (Email)</label>
+                <input type="email" id="email" placeholder="example@pixel.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div style="text-align: right; margin-top: -10px; margin-bottom: 20px;">
+                <a href="#" style="color: #666; font-size: 12px; text-decoration: none;">Забули пароль?</a>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Увійти</button>
+            </div>
+        </form>
+
+        <div class="login-footer">
+            Немає Pixel ID? <a href="#">Створити аккаунт</a>
+        </div>
+    </div>
+
+</body>
+</html>

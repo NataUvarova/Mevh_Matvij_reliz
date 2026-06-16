@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доповнення: Геми | Pixel Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стилі для сітки гемів */
+        .gems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .gem-card {
+            border: 1px solid #e0bfff;
+            border-radius: 15px;
+            background: #fff;
+            padding: 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+        }
+        .gem-card:hover {
+            transform: translateY(-5px);
+        }
+        .bonus-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #00bcd4;
+            color: white;
+            padding: 4px 8px;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .gem-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .gem-amount {
+            font-size: 22px;
+            font-weight: bold;
+            color: #311b92;
+            margin: 0 0 5px 0;
+        }
+        .gem-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4a148c;
+            margin: 15px 0 0 0;
+        }
+        .buy-gem-btn {
+            background-color: #4a148c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        .buy-gem-btn:hover {
+            background-color: #311b92;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА З ВЕЛИКИМИ І ПРАВИЛЬНИМИ КНОПКАМИ -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="assets/logo.png" alt="Pixel Portal Logo" class="logo-img">
+                <span class="logo-text">Pixel Portal</span>
+            </a>
+            <nav class="nav" style="display: flex; gap: 12px; align-items: center;">
+                <a href="index.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">головна</a>
+                <a href="games.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">готові ігри</a>
+                <a href="promotions.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">акції</a>
+                <a href="addons.html" class="nav-btn active" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">доповнення</a>
+                <a href="about.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">про нас</a>
+                <a href="support.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">підтримка</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГОЛОВНИЙ КОНТЕНТ СТОРІНКИ -->
+    <main class="container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        
+        <div style="background-color: #f3e5f5; border: 1px solid #e0bfff; border-radius: 15px; padding: 25px; text-align: center; margin-bottom: 40px;">
+            <h2 style="color: #4a148c; margin: 0 0 10px 0; font-size: 26px;">💎 Ігрова валюта: Pixel Gems</h2>
+            <p style="color: #4a148c; margin: 0; font-size: 15px;">Натисніть на пак, щоб поповнити свій баланс. Не забувайте: авторизовані користувачі з PIXEL ID отримують <strong>+10% GEM BONUS</strong> автоматично!</p>
+        </div>
+
+        <h3 style="color: #000; font-size: 22px; font-weight: bold; margin-bottom: 20px;">Оберіть набір кристалів:</h3>
+
+        <!-- СІТКА З ТОВАРАМИ -->
+        <div class="gems-grid">
+            
+            <!-- Малий пак -->
+            <div class="gem-card">
+                <div class="gem-icon">💎</div>
+                <h4 class="gem-amount">100 Gems</h4>
+                <p style="color: #777; margin: 0; font-size: 14px;">Стартовий набір</p>
+                <p class="gem-price">45 грн.</p>
+                <button class="buy-gem-btn">Придбати</button>
+            </div>
+
+            <!-- Середній пак з бонусом -->
+            <div class="gem-card" style="border: 1px solid #00bcd4;">
+                <span class="bonus-badge">+10% BONUS</span>
+                <div class="gem-icon">💎✨</div>
+                <h4 class="gem-amount">500 (+50) Gems</h4>
+                <p style="color: #777; margin: 0; font-size: 14px;">Популярний вибір</p>
+                <p class="gem-price">210 грн.</p>
+                <button class="buy-gem-btn" style="background-color: #00bcd4;">Придбати</button>
+            </div>
+
+            <!-- Великий пак -->
+            <div class="gem-card">
+                <span class="bonus-badge" style="background-color: #d32f2f;">🔥 ХІТ</span>
+                <div class="gem-icon">🧰💎</div>
+                <h4 class="gem-amount">1200 (+120) Gems</h4>
+                <p style="color: #777; margin: 0; font-size: 14px;">Геймерський набір</p>
+                <p class="gem-price">480 грн.</p>
+                <button class="buy-gem-btn">Придбати</button>
+            </div>
+
+            <!-- Ультра пак -->
+            <div class="gem-card" style="border: 2px dashed #4a148c;">
+                <span class="bonus-badge" style="background-color: #4a148c;">МАКСИМУМ</span>
+                <div class="gem-icon">👑💎</div>
+                <h4 class="gem-amount">2500 (+250) Gems</h4>
+                <p style="color: #777; margin: 0; font-size: 14px;">Скарбниця Pixel ID</p>
+                <p class="gem-price">950 грн.</p>
+                <button class="buy-gem-btn">Придбати</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ПІДВАЛ (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h5>Про проєкт</h5>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="support.html">Підтримка</a></li>
+                    <li><a href="privacy.html">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" style="text-align: center;">
+                <img src="assets/logo.png" alt="Brand" style="max-height: 40px; display: block; margin: 0 auto 10px auto;">
+                <h5 style="color: #00bcd4; margin: 5px 0 0 0;">Соціальні мережі</h5>
+                <ul style="margin-top: 5px;">
+                    <li><a href="https://www.instagram.com/pixelstopixels/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/pixelfederationcom">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <h5>Наші Ігри</h5>
+                <ul>
+                    <li><a href="#" class="google-play-link">Google Play</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-center">
+            &copy; 2026 Pixel Portal. Всі права захищені.
+        </div>
+    </footer>
+
+</body>
+</html>

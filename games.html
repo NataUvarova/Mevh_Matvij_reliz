@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Всі ігри | Pixel Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Додаткові стилі для сторінки ігор */
+        .catalog-container { margin-top: 40px; display: grid; grid-template-columns: 250px 1fr; gap: 30px; }
+        .filters { border: 1px solid #e0bfff; border-radius: 10px; padding: 20px; height: fit-content; }
+        .filters h3 { color: #4a148c; margin-bottom: 15px; }
+        .filter-group { margin-bottom: 20px; }
+        .filter-group label { display: block; margin-bottom: 8px; cursor: pointer; }
+        .search-bar { width: 100%; padding: 10px; border: 1px solid #e0bfff; border-radius: 5px; margin-bottom: 20px; }
+        @media (max-width: 768px) { .catalog-container { grid-template-columns: 1fr; } }
+        
+        /* Стиль для підвалу (footer) */
+        .footer { background-color: #f9f3ff; margin-top: 50px; padding: 30px 0; border-top: 1px solid #e0bfff; text-align: center; }
+        .footer-links { margin-bottom: 15px; }
+        .footer-links a { margin: 0 15px; color: #4a148c; text-decoration: none; font-weight: 500; }
+        .footer-links a:hover { text-decoration: underline; }
+        .copyright { color: #777; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <!-- Посилання на головну сторінку при кліку на логотип -->
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="assets/logo.png" alt="Pixel Portal Logo" class="logo-img">
+                <span class="logo-text">Pixel Portal</span>
+            </a>
+            <nav class="nav" style="display: flex; gap: 12px; align-items: center;">
+                <a href="index.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">головна</a>
+                <a href="games.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">готові ігри</a>
+                <a href="promotions.html" class="nav-btn active" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">акції</a>
+                <a href="addons.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">доповнення</a>
+                <a href="about.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">про нас</a>
+                <a href="support.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">підтримка</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container catalog-container">
+        <aside class="filters">
+            <h3>Фільтри</h3>
+            <div class="filter-group">
+                <h4>Жанри</h4>
+                <label><input type="checkbox"> Симулятори</label>
+                <label><input type="checkbox"> Екшн / RPG</label>
+                <label><input type="checkbox"> Стратегії</label>
+                <label><input type="checkbox"> Пісочниці</label>
+                <label><input type="checkbox"> Файтинги</label> <!-- Додано новий жанр для MK -->
+            </div>
+            <div class="filter-group">
+                <h4>Ціна</h4>
+                <label><input type="radio" name="price"> Безкоштовно</label>
+                <label><input type="radio" name="price"> До 250 грн.</label>
+                <label><input type="radio" name="price"> Від 250 грн.</label>
+            </div>
+        </aside>
+
+        <section>
+            <input type="text" placeholder="Пошук ігор за назвою..." class="search-bar">
+            
+            <div class="games-grid">
+                <!-- Картка 1: Minecraft -->
+                <div class="game-card">
+                    <a href="game-minecraft.html"><img src="assets/image 2.png" alt="Minecraft" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">200 грн.</span>
+                        <a href="game-minecraft.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 2: Halo -->
+                <div class="game-card">
+                    <a href="game-halo.html"><img src="assets/image 5.png" alt="Halo" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">200 грн.</span>
+                        <a href="game-halo.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 3: Total War -->
+                <div class="game-card">
+                    <a href="game-totalwar.html"><img src="assets/image 4.png" alt="Total War" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">250 грн.</span>
+                        <a href="game-totalwar.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 4: The Sims 4 -->
+                <div class="game-card">
+                    <a href="game-sims4.html"><img src="assets/image 6.png" alt="The Sims 4" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">Безкоштовно</span>
+                        <a href="game-sims4.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 5: Cyberpunk 2077 -->
+                <div class="game-card">
+                    <a href="game-cyberpunk.html"><img src="assets/cyberpunk.jpg" alt="Cyberpunk 2077" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">450 грн.</span>
+                        <a href="game-cyberpunk.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 6: Dota 2 (Оновлено посилання та шлях) -->
+                <div class="game-card">
+                    <a href="game-dota2.html"><img src="assets/завантаження.jpg" alt="Dota 2" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">Безкоштовно</span>
+                        <a href="game-dota2.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 7: Mortal Kombat (НОВА) -->
+                <div class="game-card">
+                    <a href="game-eldenring.html"><img src="assets/eldenring.jpg" alt="Elden Ring" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">550 грн.</span>
+                        <a href="game-eldenring.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                </div>
+
+                <!-- Картка 8: The Witcher 3 (НОВА для симетрії сітки) -->
+                <div class="game-card">
+                    <a href="game-witcher3.html"><img src="assets/witcher3.jpg" alt="The Witcher 3" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">300 грн.</span>
+                        <a href="game-witcher3.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+                    
+                </div>
+                <div class="game-card">
+                    <a href="game-sims4.html"><img src="assets/sims4.jpg" alt="" class="game-img"></a>
+                    <div class="card-footer">
+                        <span class="price">300 грн.</span>
+                        <a href="game-witcher3.html" class="arrow-btn" style="text-decoration: none; text-align: center; line-height: normal;">&gt;</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="support.html">Підтримка</a>
+                <a href="privacy.html">Політика конфіденційності</a>
+            </div>
+            <p class="copyright">&copy; 2026 Pixel Portal. Всі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

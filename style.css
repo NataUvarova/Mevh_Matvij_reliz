@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка сайту */
+.header {
+    background-color: #2b11bd;
+    padding: 15px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Баннер (Hero) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: center;
+}
+
+.mini-logo {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.details-link {
+    display: block;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login-btn {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Вступний текст */
+.intro-text {
+    margin: 30px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Сітка карток ігор */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.game-card {
+    border: 1px solid #e0bfff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    background: #fff;
+}
+
+.game-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #4a148c;
+    font-size: 14px;
+}
+
+.special-price {
+    font-size: 11px;
+    color: #4a148c;
+}
+
+.discount {
+    color: #b71c1c;
+}
+
+.arrow-btn {
+    border: 1px solid #8e24aa;
+    background: transparent;
+    color: #8e24aa;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ФАК та Маленькі іконки */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.faq-box {
+    border: 1px solid #e0bfff;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.faq-box h3 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+.faq-box ul {
+    list-style: none;
+}
+
+.faq-box li {
+    margin-bottom: 15px;
+}
+
+.faq-box li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.apps-box h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.apps-grid img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Секція з потягом */
+.train-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.train-media {
+    position: relative;
+}
+
+.train-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.train-logo {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 150px;
+}
+
+.train-card {
+    border: 1px solid #e0bfff;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Підвал */
+.footer {
+    border-top: 2px solid #00bcd4;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-socials h4, .footer-apps h4 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-socials a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-apps {
+    text-align: right;
+}
+
+.store-badge img {
+    height: 40px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+}
+
+/* --- АДАПТИВНІСТЬ (MEDIA QUERIES) --- */
+
+/* Планшети (до 992px) */
+@media (max-width: 992px) {
+    .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .info-section, .train-section {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-apps {
+        text-align: left;
+    }
+    .store-badge img {
+        margin-left: 0;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .apps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-apps {
+        text-align: center;
+    }
+    .store-badge img {
+        margin: 5px auto;
+    }
+    .header-container {
+        flex-direction: column;
+    }
+}
+
+/* Маленькі екрани (до 480px) */
+@media (max-width: 480px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .train-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .train-logo {
+        width: 100px;
+        right: 10px;
+    }
+}

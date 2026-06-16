@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доповнення: Поїзди TS2 | Pixel Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Сітка для карток доповнень */
+        .trains-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* Твоя фірмова картка з градієнтним верхом */
+        .train-card {
+            border: 1px solid #e0bfff;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+        .train-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Синьо-фіолетовий градієнтний блок (як на скріншоті) */
+        .card-banner-blue {
+            background: linear-gradient(135deg, #4a148c, #2979ff);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Червоно-помаранчевий градієнтний блок (для різноманітності) */
+        .card-banner-red {
+            background: linear-gradient(135deg, #ff1744, #ff9100);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Нижня частина картки (біла) */
+        .card-body-content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .price-tag {
+            color: #311b92;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Кнопка-стрілочка в стилі твого сайту */
+        .circle-arrow-btn {
+            background: #fff;
+            border: 1px solid #e0bfff;
+            color: #4a148c;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .circle-arrow-btn:hover {
+            background: #4a148c;
+            color: #fff;
+            border-color: #4a148c;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="assets/logo.png" alt="Pixel Portal Logo" class="logo-img">
+                <span class="logo-text">Pixel Portal</span>
+            </a>
+            <nav class="nav" style="display: flex; gap: 12px; align-items: center;">
+                <a href="index.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">головна</a>
+                <a href="games.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">готові ігри</a>
+                <a href="promotions.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">акції</a>
+                <a href="addons.html" class="nav-btn active" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">доповнення</a>
+                <a href="about.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">про нас</a>
+                <a href="support.html" class="nav-btn" style="text-decoration: none; color: white; background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; transition: 0.2s;">підтримка</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        
+        <h2 style="color: #000; font-size: 26px; font-weight: bold; margin-bottom: 5px;">Внутрішня валюта та DLC</h2>
+        <p style="color: #666; font-size: 15px; margin-bottom: 35px;">Найкращий вибір ігор, завжди підкажемо кращі ігри, номер телефону знизу.</p>
+
+        <div class="trains-grid">
+            
+            <div class="train-card">
+                <div class="card-banner-blue">
+                    Набір поїздів для TS2
+                </div>
+                <div class="card-body-content">
+                    <span class="price-tag">150 грн.</span>
+                    <a href="product-trains-euro.html" class="circle-arrow-btn">&gt;</a>
+                </div>
+            </div>
+
+            <div class="train-card">
+                <div class="card-banner-red">
+                    USA Freight Pack TS2
+                </div>
+                <div class="card-body-content">
+                    <span class="price-tag">180 грн.</span>
+                    <a href="product-trains-usa.html" class="circle-arrow-btn">&gt;</a>
+                </div>
+            </div>
+
+            <div class="train-card">
+                <div class="card-banner-blue">
+                    High-Speed Trains DLC
+                </div>
+                <div class="card-body-content">
+                    <span class="price-tag">220 грн.</span>
+                    <a href="product-trains-fast.html" class="circle-arrow-btn">&gt;</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer
